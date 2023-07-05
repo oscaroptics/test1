@@ -1,5 +1,5 @@
 .testimonial-section {
-    background-color: rgb(247, 247, 247);
+    background-color: rgb(243, 243, 243);
     padding-left: 100px;
     margin: 50px 0px 50px 0px;
   }
@@ -25,7 +25,7 @@
     width: 100%;
     height: auto;
     object-fit: cover;
-    filter: grayscale(100%) opacity(70%);
+    filter: white(90%) opacity(70%);
   }
   
   .h1div{
