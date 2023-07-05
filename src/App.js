@@ -1,6 +1,6 @@
 import React from 'react';
 import TestimonialSection from './components/TestimonialSection';
-import './styles.css';
+import './styles/styles.css';
 
 function App() {
   return (
