@@ -1,29 +1,30 @@
 import React from "react";
 import Testimonial from "./Testimonial";
 
+
 const testimonialData = [
   {
     name: "John Doe",
     testimonial:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur risus vitae orci ultricies consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur risus vitae orci ultricies consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur risus vitae orci ultricies consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur risus vitae orci ultricies consequat.",
-    image: "img1.jpg",
+    image: "image_26.png",
   },
   {
     name: "Jane Doe",
     testimonial:
       "Sed consectetur risus vitae orci ultricies consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur risus vitae orci ultricies consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur risus vitae orci ultricies consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur risus vitae orci ultricies consequat.",
-    image: "img2.jpg",
+    image: "image_28.png",
   },
   {
     name: "Mike Doe",
-    testimonial: "Lorem vitae orci ultricies consequat. consequat.",
-    image: "img2.jpg",
+    testimonial:  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur risus vitae orci ultricies consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur risus vitae orci ultricies consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur risus vitae orci ultricies consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur risus vitae orci ultricies consequat.",
+    image: "image_27.png",
   },
 ];
 
 const TestimonialSection = () => {
   const [testimonialIndex, setTestimonialIndex] = React.useState(0);
-  const numTestimonials = testimonialData.length; // 2
+  const numTestimonials = testimonialData.length; 
 
   const handleOnClick = () => {
     if (testimonialIndex + 1 >= numTestimonials) {
@@ -36,9 +37,9 @@ const TestimonialSection = () => {
   React.useEffect(() => {
     let id = setInterval(() => {
       handleOnClick();
-    }, 5000);
+    }, 1500);
     return () => clearInterval(id);
-  }, [, testimonialIndex]);
+  }, [ testimonialIndex]);
 
   return (
     <>
